@@ -16,12 +16,12 @@ The project includes a static website, ontology files, Widoco-generated document
 
 Namespace IRI:
 
-http://www.rato.org/ontology/
+https://github.com/addonico/RatO/ontology/
 
 
 Version IRI:
 
-http://www.rato.org/ontology/1.0.0
+https://github.com/addonico/RatO/ontology/1.0
 
 
 
