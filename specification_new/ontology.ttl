@@ -1,0 +1,699 @@
+@prefix : <https://github.com/addonico/RatO/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://github.com/addonico/RatO/ontology/> .
+
+<https://github.com/addonico/RatO/ontology/> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://github.com/addonico/RatO/ontology/1.0> ;
+                                              owl:imports <http://xmlns.com/foaf/0.1/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#differentFrom
+owl:differentFrom rdf:type owl:ObjectProperty .
+
+
+###  https://github.com/addonico/RatO/ontology/actedIn
+:actedIn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :workedOn ;
+         owl:inverseOf :features ;
+         rdfs:domain :actor ;
+         rdfs:range :movie ;
+         rdfs:comment "An actor/actress that acted in a movie. Inverse of the property \"featured\"." .
+
+
+###  https://github.com/addonico/RatO/ontology/consistsOf
+:consistsOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :ratingGiver ;
+            rdfs:range :voters ;
+            rdfs:comment "The property relates the rating body with the people constituting it." ;
+            rdfs:label "consists of" .
+
+
+###  https://github.com/addonico/RatO/ontology/directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            owl:inverseOf :directs ;
+            rdfs:domain :movie ;
+            rdfs:range :director ;
+            rdfs:comment "Property relating the movie with its director(s). Inverse of \"directed\"." ;
+            rdfs:label "directed by" .
+
+
+###  https://github.com/addonico/RatO/ontology/directs
+:directs rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :workedOn ;
+         rdfs:comment "The director who directed the movie. Inverse of \"directedBy\"." ;
+         rdfs:label "directed" .
+
+
+###  https://github.com/addonico/RatO/ontology/expressedBy
+:expressedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :expresses ;
+             rdfs:domain :rating ;
+             rdfs:range :ratingGiver ;
+             rdfs:comment "The property connects the rating with its source, e.g, \"IMDb\"." ;
+             rdfs:label "Expressed by" .
+
+
+###  https://github.com/addonico/RatO/ontology/expressedOn
+:expressedOn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :hasRating ;
+             rdfs:domain :rating ;
+             rdfs:range :movie ;
+             rdfs:comment "The property connects a rating with the movie it describes. Inverse of \"hasRating\"." ;
+             rdfs:label "expressed on" .
+
+
+###  https://github.com/addonico/RatO/ontology/expressedWith
+:expressedWith rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :rating ;
+               rdfs:range :scale ;
+               rdfs:comment "The property connecting a score to the scale used to express it." ;
+               rdfs:label "expressed with" .
+
+
+###  https://github.com/addonico/RatO/ontology/expresses
+:expresses rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :ratingGiver ;
+           rdfs:range :rating ;
+           rdfs:comment "Property relating the rating authority to the rating it expressed. Inverse of \"expressedBy\"." ;
+           rdfs:label "expresses" .
+
+
+###  https://github.com/addonico/RatO/ontology/features
+:features rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:comment "The property connects the movie with the actor/actress who acted in it. Inverse of \"actedIn\"." ;
+          rdfs:label "featured" .
+
+
+###  https://github.com/addonico/RatO/ontology/givenBy
+:givenBy rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         owl:inverseOf :gives ;
+         rdfs:domain :award ;
+         rdfs:range :awardingBody ;
+         rdfs:comment "Property connecting the award to the awarding body or event that assigns it. Inverse of \"gives\"." ;
+         rdfs:label "given by" .
+
+
+###  https://github.com/addonico/RatO/ontology/gives
+:gives rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty ;
+       rdfs:comment "The property specifies the award that a body, event or institution assigns to a movie. Inverse of \"givenBy\"." ;
+       rdfs:label "gives" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasCategory
+:hasCategory rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :award ;
+             rdfs:range :category ;
+             rdfs:comment "Property specifying the category of the award related to a movie, e.g. \"Top Box Office Movie\"." ;
+             rdfs:label "has category" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasGenre
+:hasGenre rdf:type owl:ObjectProperty ;
+          rdfs:domain :movie ;
+          rdfs:range :genre ;
+          rdfs:comment "Property relating the movie to its genres." ;
+          rdfs:label "has genre" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :movie ;
+           rdfs:range :rating ;
+           rdfs:comment "The property refers the movie to its ratings. Inverse of \"expressedOn\"." ;
+           rdfs:label "has rating" .
+
+
+###  https://github.com/addonico/RatO/ontology/produced
+:produced rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :workedOn ;
+          owl:inverseOf :producedBy ;
+          rdfs:comment "The person producing a movie. Inverse of \"producedBy\"." .
+
+
+###  https://github.com/addonico/RatO/ontology/producedBy
+:producedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :movie ;
+            rdfs:range :producer ;
+            rdfs:comment "Property connecting the movie with its producer. Inverse of \"produced\"." ;
+            rdfs:label "produced by" .
+
+
+###  https://github.com/addonico/RatO/ontology/wonAward
+:wonAward rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :movie ;
+          rdfs:range :award ;
+          rdfs:comment "Property relating the movie with the awards." ;
+          rdfs:label "won award" .
+
+
+###  https://github.com/addonico/RatO/ontology/workedOn
+:workedOn rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+          rdfs:range :movie ;
+          rdfs:comment "Any activity perfomed by a person while working on a movie, i.e., producing, writing, taking care of photography or costumes." ;
+          rdfs:label "worked on" .
+
+
+###  https://github.com/addonico/RatO/ontology/workedWith
+:workedWith rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/knows> ;
+            rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+            rdfs:range <http://xmlns.com/foaf/0.1/Person> ;
+            owl:propertyChainAxiom ( :workedOn
+                                     [ owl:inverseOf :workedOn
+                                     ]
+                                   ) ;
+            rdfs:comment "Property connecting two people who have worked on the same movie, regardless of their specific job." ;
+            rdfs:label "worked with" .
+
+
+###  https://github.com/addonico/RatO/ontology/writes
+:writes rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :workedOn ;
+        owl:inverseOf :writtenBy ;
+        rdfs:domain :screenwriter ;
+        rdfs:range :movie ;
+        rdfs:comment "The screenwriter writing a movie. Inverse of \"writtenBy\"." ;
+        rdfs:label "wrote" .
+
+
+###  https://github.com/addonico/RatO/ontology/writtenBy
+:writtenBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:comment "Property connecting a movie to its screenwriter. Inverse of \"wrote\"." ;
+           rdfs:label "written by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
+                                      rdfs:range xsd:string .
+
+
+###  https://github.com/addonico/RatO/ontology/basedOn
+:basedOn rdf:type owl:DatatypeProperty ;
+         rdfs:domain :rating ;
+         rdfs:range xsd:decimal ,
+                    xsd:integer ;
+         rdfs:comment "The number of votes that determine the score, i.e., a five-star score based on twenty votes." ;
+         rdfs:label "based on" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasCategoryName
+:hasCategoryName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :category ;
+                 rdfs:range xsd:string ;
+                 owl:propertyDisjointWith <https://github.com/addonico/RatO/ontology/#hasName> ;
+                 rdfs:comment "The name of an award's category, e.g. \"Top Box Office Movie\"." ;
+                 rdfs:label "has category name" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasLanguage
+:hasLanguage rdf:type owl:DatatypeProperty ;
+             rdfs:domain :movie ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Property specifying the main language spoken in a movie." ;
+             rdfs:label "has language" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasOriginalTitle
+:hasOriginalTitle rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :movie ;
+                  rdfs:range xsd:string ;
+                  owl:propertyDisjointWith :hasTitle ;
+                  rdfs:comment "The original title of a movie." ;
+                  rdfs:label "has original title" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasReleaseDate
+:hasReleaseDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain :movie ;
+                rdfs:range xsd:date ;
+                rdfs:comment "Property specifying the date of release of a movie, expressed only by its year, e.g. \"2015\"." ;
+                rdfs:label "has release date" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasScore
+:hasScore rdf:type owl:DatatypeProperty ;
+          rdfs:domain :rating ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "Property expressing the value, numerical or literal, of a rating." ;
+          rdfs:label "has score" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasTitle
+:hasTitle rdf:type owl:DatatypeProperty ;
+          rdfs:domain :movie ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Property declaring the main title a movie is known with." ;
+          rdfs:label "has title" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasType
+:hasType rdf:type owl:DatatypeProperty ;
+         rdfs:domain :category ;
+         rdfs:range xsd:string ;
+         owl:propertyDisjointWith <https://github.com/addonico/RatO/ontology/#hasName> ;
+         rdfs:comment "The property specifying whether a movie was only nominated or also won an award." ;
+         rdfs:label "has type" .
+
+
+###  https://github.com/addonico/RatO/ontology/hasValue
+:hasValue rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The property specifies the type of genre of a movie." ;
+          rdfs:label "has value" .
+
+
+###  https://github.com/addonico/RatO/ontology/#hasName
+<https://github.com/addonico/RatO/ontology/#hasName> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain :awardingBody ,
+                                                                 :ratingGiver ;
+                                                     rdfs:range xsd:string ;
+                                                     rdfs:comment "Property specifying the name of a deciding body (assigning an award or a rating)." ;
+                                                     rdfs:label "has name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://xmlns.com/foaf/0.1/givenName> ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onDataRange xsd:string
+                                                   ] .
+
+
+###  https://github.com/addonico/RatO/ontology/actor
+:actor rdf:type owl:Class ;
+       rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+       rdfs:comment "An actor or actress who acted in the movie" .
+
+
+###  https://github.com/addonico/RatO/ontology/award
+:award rdf:type owl:Class ;
+       rdfs:comment "An award given by an awarding body to a movie or a person involved in its production" ;
+       rdfs:label "Award" .
+
+
+###  https://github.com/addonico/RatO/ontology/awardType
+:awardType rdf:type owl:Class ;
+           rdfs:comment "The status of the award: a movie can win a specific awards, or just be nominated for it" .
+
+
+###  https://github.com/addonico/RatO/ontology/awardingBody
+:awardingBody rdf:type owl:Class ;
+              rdfs:comment "An organization or event assigning awards to movies and people involved in their productions" .
+
+
+###  https://github.com/addonico/RatO/ontology/category
+:category rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCategoryName ;
+                            owl:someValuesFrom xsd:string
+                          ] ;
+          rdfs:comment "The category of the award, i.e. \"Best Cinematography\" of the BSFC Award." .
+
+
+###  https://github.com/addonico/RatO/ontology/decimalScale
+:decimalScale rdf:type owl:Class ;
+              rdfs:subClassOf :scale ;
+              rdfs:comment "A ten-based scale, with 1 being the lowest score and 10 the highest." .
+
+
+###  https://github.com/addonico/RatO/ontology/director
+:director rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+          rdfs:comment "The director of a movie. A movie can have one or more directors." .
+
+
+###  https://github.com/addonico/RatO/ontology/fiveStars
+:fiveStars rdf:type owl:Class ;
+           rdfs:subClassOf :scale ;
+           rdfs:comment "A scale based on five starts, with one star being a low rating and five being the highest." .
+
+
+###  https://github.com/addonico/RatO/ontology/genre
+:genre rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasValue ;
+                         owl:someValuesFrom xsd:string
+                       ] ;
+       rdfs:comment "The genre of a movie, i.e. adventure, or rom-com. A movie can have multiple genres." .
+
+
+###  https://github.com/addonico/RatO/ontology/language
+:language rdf:type owl:Class ;
+          rdfs:comment "The main language spoken in the movie." .
+
+
+###  https://github.com/addonico/RatO/ontology/movie
+:movie rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :directedBy ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :director
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :features ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :actor
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :writtenBy ;
+                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :screenwriter
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasTitle ;
+                         owl:someValuesFrom rdfs:Literal
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasReleaseDate ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:date
+                       ] ;
+       rdfs:comment "A movie, identified by its title, date of release and people involved in its realization. It's assigned one or more ratings and can be awarded or nominated for one or more awards." ;
+       rdfs:label "Movie" .
+
+
+###  https://github.com/addonico/RatO/ontology/percentage
+:percentage rdf:type owl:Class ;
+            rdfs:subClassOf :scale ;
+            rdfs:comment "A percentage-based scale, with lower percentages representing scarce appreciation." .
+
+
+###  https://github.com/addonico/RatO/ontology/producer
+:producer rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+          rdfs:comment "The producer of a movie. A movie can have more than one producer." .
+
+
+###  https://github.com/addonico/RatO/ontology/rating
+:rating rdf:type owl:Class ;
+        rdfs:comment "The rating given to a movie, consisting of a score (numerical, string, etc) expressed according to a scale (percentage, stars) and issued by a rating body." .
+
+
+###  https://github.com/addonico/RatO/ontology/ratingGiver
+:ratingGiver rdf:type owl:Class ;
+             rdfs:comment "The entity giving a rating, consisting either of a group of voters or of a single voter." .
+
+
+###  https://github.com/addonico/RatO/ontology/scale
+:scale rdf:type owl:Class ;
+       rdfs:comment "The scale defining the score, i.e., percentages, 1 to 5 stars, 1-10 scale." ;
+       rdfs:label "Scale" .
+
+
+###  https://github.com/addonico/RatO/ontology/screenwriter
+:screenwriter rdf:type owl:Class ;
+              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ;
+              rdfs:comment "The screenwriter of a movie. A movie can have more than one screenwriter." .
+
+
+###  https://github.com/addonico/RatO/ontology/voters
+:voters rdf:type owl:Class ;
+        rdfs:comment "A group of people expressing a rating." ;
+        rdfs:label "Voters" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://github.com/addonico/RatO/ontology/BAFTA
+:BAFTA rdf:type owl:NamedIndividual ,
+                :awardingBody .
+
+
+###  https://github.com/addonico/RatO/ontology/BestActor
+:BestActor rdf:type owl:NamedIndividual ,
+                    :category .
+
+
+###  https://github.com/addonico/RatO/ontology/BestActress
+:BestActress rdf:type owl:NamedIndividual ,
+                      :category .
+
+
+###  https://github.com/addonico/RatO/ontology/BestDirector
+:BestDirector rdf:type owl:NamedIndividual ,
+                       :category .
+
+
+###  https://github.com/addonico/RatO/ontology/BestPicture
+:BestPicture rdf:type owl:NamedIndividual ,
+                      :category .
+
+
+###  https://github.com/addonico/RatO/ontology/Comedy
+:Comedy rdf:type owl:NamedIndividual ,
+                 :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/Crime
+:Crime rdf:type owl:NamedIndividual ,
+                :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/Documentary
+:Documentary rdf:type owl:NamedIndividual ,
+                      :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/Drama
+:Drama rdf:type owl:NamedIndividual ,
+                :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/Fantasy
+:Fantasy rdf:type owl:NamedIndividual ,
+                  :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/GoldenGlobeAward
+:GoldenGlobeAward rdf:type owl:NamedIndividual ,
+                           :awardingBody .
+
+
+###  https://github.com/addonico/RatO/ontology/IMDb
+:IMDb rdf:type owl:NamedIndividual ,
+               :ratingGiver .
+
+
+###  https://github.com/addonico/RatO/ontology/Inception
+:Inception rdf:type owl:NamedIndividual ,
+                    :movie .
+
+
+###  https://github.com/addonico/RatO/ontology/LeonardoDiCaprio
+:LeonardoDiCaprio rdf:type owl:NamedIndividual ,
+                           :actor ;
+                  :actedIn :Inception .
+
+
+###  https://github.com/addonico/RatO/ontology/Musical
+:Musical rdf:type owl:NamedIndividual ,
+                  :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/RottenTomatoes
+:RottenTomatoes rdf:type owl:NamedIndividual ,
+                         :ratingGiver .
+
+
+###  https://github.com/addonico/RatO/ontology/action
+:action rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/addonico/RatO/ontology/adventure
+:adventure rdf:type owl:NamedIndividual ,
+                    :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/animation
+:animation rdf:type owl:NamedIndividual ,
+                    :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/en
+:en rdf:type owl:NamedIndividual ,
+             :language .
+
+
+###  https://github.com/addonico/RatO/ontology/fr
+:fr rdf:type owl:NamedIndividual ,
+             :language .
+
+
+###  https://github.com/addonico/RatO/ontology/it
+:it rdf:type owl:NamedIndividual ,
+             :language .
+
+
+###  https://github.com/addonico/RatO/ontology/nominated
+:nominated rdf:type owl:NamedIndividual ,
+                    :awardType .
+
+
+###  https://github.com/addonico/RatO/ontology/oscar
+:oscar rdf:type owl:NamedIndividual ,
+                :awardingBody .
+
+
+###  https://github.com/addonico/RatO/ontology/romance
+:romance rdf:type owl:NamedIndividual ,
+                  :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/scifi
+:scifi rdf:type owl:NamedIndividual ,
+                :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/thriller
+:thriller rdf:type owl:NamedIndividual ,
+                   :genre .
+
+
+###  https://github.com/addonico/RatO/ontology/won
+:won rdf:type owl:NamedIndividual ,
+              :awardType .
+
+
+###  https://github.com/addonico/RatO/ontology/#ElliotPage
+<https://github.com/addonico/RatO/ontology/#ElliotPage> rdf:type owl:NamedIndividual ;
+                                                        :actedIn :Inception .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :decimalScale
+                :fiveStars
+                :percentage
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :IMDb
+                        :RottenTomatoes
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :LeonardoDiCaprio
+                        <https://github.com/addonico/RatO/ontology/#ElliotPage>
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "if two people have worked on the same movie, they know each other" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :movie ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://xmlns.com/foaf/0.1/Person> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> <http://xmlns.com/foaf/0.1/Person> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :workedOn ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :workedOn ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p>
+                                                                                                            ] ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/knows> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

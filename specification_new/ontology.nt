@@ -1,0 +1,654 @@
+<https://github.com/addonico/RatO/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://github.com/addonico/RatO/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://github.com/addonico/RatO/ontology/1.0> .
+<https://github.com/addonico/RatO/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#differentFrom
+<http://www.w3.org/2002/07/owl#differentFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://github.com/addonico/RatO/ontology/actedIn
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/addonico/RatO/ontology/workedOn> .
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/features> .
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/actor> .
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/actedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor/actress that acted in a movie. Inverse of the property \"featured\"." .
+# 
+# https://github.com/addonico/RatO/ontology/consistsOf
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/voters> .
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The property relates the rating body with the people constituting it." .
+<https://github.com/addonico/RatO/ontology/consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
+# 
+# https://github.com/addonico/RatO/ontology/directedBy
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/directs> .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/director> .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Property relating the movie with its director(s). Inverse of \"directed\"." .
+<https://github.com/addonico/RatO/ontology/directedBy> <http://www.w3.org/2000/01/rdf-schema#label> "directed by" .
+# 
+# https://github.com/addonico/RatO/ontology/directs
+<https://github.com/addonico/RatO/ontology/directs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/directs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/addonico/RatO/ontology/workedOn> .
+<https://github.com/addonico/RatO/ontology/directs> <http://www.w3.org/2000/01/rdf-schema#comment> "The director who directed the movie. Inverse of \"directedBy\"." .
+<https://github.com/addonico/RatO/ontology/directs> <http://www.w3.org/2000/01/rdf-schema#label> "directed" .
+# 
+# https://github.com/addonico/RatO/ontology/expressedBy
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/expresses> .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The property connects the rating with its source, e.g, \"IMDb\"." .
+<https://github.com/addonico/RatO/ontology/expressedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Expressed by" .
+# 
+# https://github.com/addonico/RatO/ontology/expressedOn
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/hasRating> .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property connects a rating with the movie it describes. Inverse of \"hasRating\"." .
+<https://github.com/addonico/RatO/ontology/expressedOn> <http://www.w3.org/2000/01/rdf-schema#label> "expressed on" .
+# 
+# https://github.com/addonico/RatO/ontology/expressedWith
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/scale> .
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The property connecting a score to the scale used to express it." .
+<https://github.com/addonico/RatO/ontology/expressedWith> <http://www.w3.org/2000/01/rdf-schema#label> "expressed with" .
+# 
+# https://github.com/addonico/RatO/ontology/expresses
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/2000/01/rdf-schema#comment> "Property relating the rating authority to the rating it expressed. Inverse of \"expressedBy\"." .
+<https://github.com/addonico/RatO/ontology/expresses> <http://www.w3.org/2000/01/rdf-schema#label> "expresses" .
+# 
+# https://github.com/addonico/RatO/ontology/features
+<https://github.com/addonico/RatO/ontology/features> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/features> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/features> <http://www.w3.org/2000/01/rdf-schema#comment> "The property connects the movie with the actor/actress who acted in it. Inverse of \"actedIn\"." .
+<https://github.com/addonico/RatO/ontology/features> <http://www.w3.org/2000/01/rdf-schema#label> "featured" .
+# 
+# https://github.com/addonico/RatO/ontology/givenBy
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/gives> .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/award> .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/awardingBody> .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Property connecting the award to the awarding body or event that assigns it. Inverse of \"gives\"." .
+<https://github.com/addonico/RatO/ontology/givenBy> <http://www.w3.org/2000/01/rdf-schema#label> "given by" .
+# 
+# https://github.com/addonico/RatO/ontology/gives
+<https://github.com/addonico/RatO/ontology/gives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/gives> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/gives> <http://www.w3.org/2000/01/rdf-schema#comment> "The property specifies the award that a body, event or institution assigns to a movie. Inverse of \"givenBy\"." .
+<https://github.com/addonico/RatO/ontology/gives> <http://www.w3.org/2000/01/rdf-schema#label> "gives" .
+# 
+# https://github.com/addonico/RatO/ontology/hasCategory
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/award> .
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/category> .
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specifying the category of the award related to a movie, e.g. \"Top Box Office Movie\"." .
+<https://github.com/addonico/RatO/ontology/hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has category" .
+# 
+# https://github.com/addonico/RatO/ontology/hasGenre
+<https://github.com/addonico/RatO/ontology/hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/genre> .
+<https://github.com/addonico/RatO/ontology/hasGenre> <http://www.w3.org/2000/01/rdf-schema#comment> "Property relating the movie to its genres." .
+<https://github.com/addonico/RatO/ontology/hasGenre> <http://www.w3.org/2000/01/rdf-schema#label> "has genre" .
+# 
+# https://github.com/addonico/RatO/ontology/hasRating
+<https://github.com/addonico/RatO/ontology/hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The property refers the movie to its ratings. Inverse of \"expressedOn\"." .
+<https://github.com/addonico/RatO/ontology/hasRating> <http://www.w3.org/2000/01/rdf-schema#label> "has rating" .
+# 
+# https://github.com/addonico/RatO/ontology/produced
+<https://github.com/addonico/RatO/ontology/produced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/produced> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/addonico/RatO/ontology/workedOn> .
+<https://github.com/addonico/RatO/ontology/produced> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/producedBy> .
+<https://github.com/addonico/RatO/ontology/produced> <http://www.w3.org/2000/01/rdf-schema#comment> "The person producing a movie. Inverse of \"producedBy\"." .
+# 
+# https://github.com/addonico/RatO/ontology/producedBy
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/producer> .
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Property connecting the movie with its producer. Inverse of \"produced\"." .
+<https://github.com/addonico/RatO/ontology/producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "produced by" .
+# 
+# https://github.com/addonico/RatO/ontology/wonAward
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/award> .
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Property relating the movie with the awards." .
+<https://github.com/addonico/RatO/ontology/wonAward> <http://www.w3.org/2000/01/rdf-schema#label> "won award" .
+# 
+# https://github.com/addonico/RatO/ontology/workedOn
+<https://github.com/addonico/RatO/ontology/workedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/workedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/workedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/workedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Any activity perfomed by a person while working on a movie, i.e., producing, writing, taking care of photography or costumes." .
+<https://github.com/addonico/RatO/ontology/workedOn> <http://www.w3.org/2000/01/rdf-schema#label> "worked on" .
+# 
+# https://github.com/addonico/RatO/ontology/workedWith
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/knows> .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/workedOn> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/workedOn> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Property connecting two people who have worked on the same movie, regardless of their specific job." .
+<https://github.com/addonico/RatO/ontology/workedWith> <http://www.w3.org/2000/01/rdf-schema#label> "worked with" .
+# 
+# https://github.com/addonico/RatO/ontology/writes
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://github.com/addonico/RatO/ontology/workedOn> .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2002/07/owl#inverseOf> <https://github.com/addonico/RatO/ontology/writtenBy> .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/screenwriter> .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2000/01/rdf-schema#range> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2000/01/rdf-schema#comment> "The screenwriter writing a movie. Inverse of \"writtenBy\"." .
+<https://github.com/addonico/RatO/ontology/writes> <http://www.w3.org/2000/01/rdf-schema#label> "wrote" .
+# 
+# https://github.com/addonico/RatO/ontology/writtenBy
+<https://github.com/addonico/RatO/ontology/writtenBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://github.com/addonico/RatO/ontology/writtenBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://github.com/addonico/RatO/ontology/writtenBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Property connecting a movie to its screenwriter. Inverse of \"wrote\"." .
+<https://github.com/addonico/RatO/ontology/writtenBy> <http://www.w3.org/2000/01/rdf-schema#label> "written by" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://github.com/addonico/RatO/ontology/basedOn
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of votes that determine the score, i.e., a five-star score based on twenty votes." .
+<https://github.com/addonico/RatO/ontology/basedOn> <http://www.w3.org/2000/01/rdf-schema#label> "based on" .
+# 
+# https://github.com/addonico/RatO/ontology/hasCategoryName
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/category> .
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://github.com/addonico/RatO/ontology/#hasName> .
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an award's category, e.g. \"Top Box Office Movie\"." .
+<https://github.com/addonico/RatO/ontology/hasCategoryName> <http://www.w3.org/2000/01/rdf-schema#label> "has category name" .
+# 
+# https://github.com/addonico/RatO/ontology/hasLanguage
+<https://github.com/addonico/RatO/ontology/hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specifying the main language spoken in a movie." .
+<https://github.com/addonico/RatO/ontology/hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "has language" .
+# 
+# https://github.com/addonico/RatO/ontology/hasOriginalTitle
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://github.com/addonico/RatO/ontology/hasTitle> .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The original title of a movie." .
+<https://github.com/addonico/RatO/ontology/hasOriginalTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has original title" .
+# 
+# https://github.com/addonico/RatO/ontology/hasReleaseDate
+<https://github.com/addonico/RatO/ontology/hasReleaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasReleaseDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasReleaseDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://github.com/addonico/RatO/ontology/hasReleaseDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specifying the date of release of a movie, expressed only by its year, e.g. \"2015\"." .
+<https://github.com/addonico/RatO/ontology/hasReleaseDate> <http://www.w3.org/2000/01/rdf-schema#label> "has release date" .
+# 
+# https://github.com/addonico/RatO/ontology/hasScore
+<https://github.com/addonico/RatO/ontology/hasScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/rating> .
+<https://github.com/addonico/RatO/ontology/hasScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://github.com/addonico/RatO/ontology/hasScore> <http://www.w3.org/2000/01/rdf-schema#comment> "Property expressing the value, numerical or literal, of a rating." .
+<https://github.com/addonico/RatO/ontology/hasScore> <http://www.w3.org/2000/01/rdf-schema#label> "has score" .
+# 
+# https://github.com/addonico/RatO/ontology/hasTitle
+<https://github.com/addonico/RatO/ontology/hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/movie> .
+<https://github.com/addonico/RatO/ontology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Property declaring the main title a movie is known with." .
+<https://github.com/addonico/RatO/ontology/hasTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has title" .
+# 
+# https://github.com/addonico/RatO/ontology/hasType
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/category> .
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://github.com/addonico/RatO/ontology/#hasName> .
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "The property specifying whether a movie was only nominated or also won an award." .
+<https://github.com/addonico/RatO/ontology/hasType> <http://www.w3.org/2000/01/rdf-schema#label> "has type" .
+# 
+# https://github.com/addonico/RatO/ontology/hasValue
+<https://github.com/addonico/RatO/ontology/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The property specifies the type of genre of a movie." .
+<https://github.com/addonico/RatO/ontology/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# https://github.com/addonico/RatO/ontology/#hasName
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/awardingBody> .
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "Property specifying the name of a deciding body (assigning an award or a rating)." .
+<https://github.com/addonico/RatO/ontology/#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/givenName> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://github.com/addonico/RatO/ontology/actor
+<https://github.com/addonico/RatO/ontology/actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/actor> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor or actress who acted in the movie" .
+# 
+# https://github.com/addonico/RatO/ontology/award
+<https://github.com/addonico/RatO/ontology/award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/award> <http://www.w3.org/2000/01/rdf-schema#comment> "An award given by an awarding body to a movie or a person involved in its production" .
+<https://github.com/addonico/RatO/ontology/award> <http://www.w3.org/2000/01/rdf-schema#label> "Award" .
+# 
+# https://github.com/addonico/RatO/ontology/awardType
+<https://github.com/addonico/RatO/ontology/awardType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/awardType> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the award: a movie can win a specific awards, or just be nominated for it" .
+# 
+# https://github.com/addonico/RatO/ontology/awardingBody
+<https://github.com/addonico/RatO/ontology/awardingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/awardingBody> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization or event assigning awards to movies and people involved in their productions" .
+# 
+# https://github.com/addonico/RatO/ontology/category
+<https://github.com/addonico/RatO/ontology/category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/hasCategoryName> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/category> <http://www.w3.org/2000/01/rdf-schema#comment> "The category of the award, i.e. \"Best Cinematography\" of the BSFC Award." .
+# 
+# https://github.com/addonico/RatO/ontology/decimalScale
+<https://github.com/addonico/RatO/ontology/decimalScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/decimalScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/addonico/RatO/ontology/scale> .
+<https://github.com/addonico/RatO/ontology/decimalScale> <http://www.w3.org/2000/01/rdf-schema#comment> "A ten-based scale, with 1 being the lowest score and 10 the highest." .
+# 
+# https://github.com/addonico/RatO/ontology/director
+<https://github.com/addonico/RatO/ontology/director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/director> <http://www.w3.org/2000/01/rdf-schema#comment> "The director of a movie. A movie can have one or more directors." .
+# 
+# https://github.com/addonico/RatO/ontology/fiveStars
+<https://github.com/addonico/RatO/ontology/fiveStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/fiveStars> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/addonico/RatO/ontology/scale> .
+<https://github.com/addonico/RatO/ontology/fiveStars> <http://www.w3.org/2000/01/rdf-schema#comment> "A scale based on five starts, with one star being a low rating and five being the highest." .
+# 
+# https://github.com/addonico/RatO/ontology/genre
+<https://github.com/addonico/RatO/ontology/genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/hasValue> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/genre> <http://www.w3.org/2000/01/rdf-schema#comment> "The genre of a movie, i.e. adventure, or rom-com. A movie can have multiple genres." .
+# 
+# https://github.com/addonico/RatO/ontology/language
+<https://github.com/addonico/RatO/ontology/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/language> <http://www.w3.org/2000/01/rdf-schema#comment> "The main language spoken in the movie." .
+# 
+# https://github.com/addonico/RatO/ontology/movie
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/addonico/RatO/ontology/director> .
+_:genid7 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/directedBy> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/addonico/RatO/ontology/actor> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/features> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <https://github.com/addonico/RatO/ontology/screenwriter> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/writtenBy> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/hasTitle> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#date> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://github.com/addonico/RatO/ontology/hasReleaseDate> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#comment> "A movie, identified by its title, date of release and people involved in its realization. It's assigned one or more ratings and can be awarded or nominated for one or more awards." .
+<https://github.com/addonico/RatO/ontology/movie> <http://www.w3.org/2000/01/rdf-schema#label> "Movie" .
+# 
+# https://github.com/addonico/RatO/ontology/percentage
+<https://github.com/addonico/RatO/ontology/percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/percentage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://github.com/addonico/RatO/ontology/scale> .
+<https://github.com/addonico/RatO/ontology/percentage> <http://www.w3.org/2000/01/rdf-schema#comment> "A percentage-based scale, with lower percentages representing scarce appreciation." .
+# 
+# https://github.com/addonico/RatO/ontology/producer
+<https://github.com/addonico/RatO/ontology/producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/producer> <http://www.w3.org/2000/01/rdf-schema#comment> "The producer of a movie. A movie can have more than one producer." .
+# 
+# https://github.com/addonico/RatO/ontology/rating
+<https://github.com/addonico/RatO/ontology/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/rating> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating given to a movie, consisting of a score (numerical, string, etc) expressed according to a scale (percentage, stars) and issued by a rating body." .
+# 
+# https://github.com/addonico/RatO/ontology/ratingGiver
+<https://github.com/addonico/RatO/ontology/ratingGiver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/ratingGiver> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity giving a rating, consisting either of a group of voters or of a single voter." .
+# 
+# https://github.com/addonico/RatO/ontology/scale
+<https://github.com/addonico/RatO/ontology/scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/scale> <http://www.w3.org/2000/01/rdf-schema#comment> "The scale defining the score, i.e., percentages, 1 to 5 stars, 1-10 scale." .
+<https://github.com/addonico/RatO/ontology/scale> <http://www.w3.org/2000/01/rdf-schema#label> "Scale" .
+# 
+# https://github.com/addonico/RatO/ontology/screenwriter
+<https://github.com/addonico/RatO/ontology/screenwriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/screenwriter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://github.com/addonico/RatO/ontology/screenwriter> <http://www.w3.org/2000/01/rdf-schema#comment> "The screenwriter of a movie. A movie can have more than one screenwriter." .
+# 
+# https://github.com/addonico/RatO/ontology/voters
+<https://github.com/addonico/RatO/ontology/voters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://github.com/addonico/RatO/ontology/voters> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of people expressing a rating." .
+<https://github.com/addonico/RatO/ontology/voters> <http://www.w3.org/2000/01/rdf-schema#label> "Voters" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://github.com/addonico/RatO/ontology/BAFTA
+<https://github.com/addonico/RatO/ontology/BAFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/BAFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/awardingBody> .
+# 
+# https://github.com/addonico/RatO/ontology/BestActor
+<https://github.com/addonico/RatO/ontology/BestActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/BestActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/category> .
+# 
+# https://github.com/addonico/RatO/ontology/BestActress
+<https://github.com/addonico/RatO/ontology/BestActress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/BestActress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/category> .
+# 
+# https://github.com/addonico/RatO/ontology/BestDirector
+<https://github.com/addonico/RatO/ontology/BestDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/BestDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/category> .
+# 
+# https://github.com/addonico/RatO/ontology/BestPicture
+<https://github.com/addonico/RatO/ontology/BestPicture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/BestPicture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/category> .
+# 
+# https://github.com/addonico/RatO/ontology/Comedy
+<https://github.com/addonico/RatO/ontology/Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/Crime
+<https://github.com/addonico/RatO/ontology/Crime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Crime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/Documentary
+<https://github.com/addonico/RatO/ontology/Documentary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Documentary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/Drama
+<https://github.com/addonico/RatO/ontology/Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/Fantasy
+<https://github.com/addonico/RatO/ontology/Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Fantasy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/GoldenGlobeAward
+<https://github.com/addonico/RatO/ontology/GoldenGlobeAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/GoldenGlobeAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/awardingBody> .
+# 
+# https://github.com/addonico/RatO/ontology/IMDb
+<https://github.com/addonico/RatO/ontology/IMDb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/IMDb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+# 
+# https://github.com/addonico/RatO/ontology/Inception
+<https://github.com/addonico/RatO/ontology/Inception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Inception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/movie> .
+# 
+# https://github.com/addonico/RatO/ontology/LeonardoDiCaprio
+<https://github.com/addonico/RatO/ontology/LeonardoDiCaprio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/LeonardoDiCaprio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/actor> .
+<https://github.com/addonico/RatO/ontology/LeonardoDiCaprio> <https://github.com/addonico/RatO/ontology/actedIn> <https://github.com/addonico/RatO/ontology/Inception> .
+# 
+# https://github.com/addonico/RatO/ontology/Musical
+<https://github.com/addonico/RatO/ontology/Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/Musical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/RottenTomatoes
+<https://github.com/addonico/RatO/ontology/RottenTomatoes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/RottenTomatoes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/ratingGiver> .
+# 
+# https://github.com/addonico/RatO/ontology/action
+<https://github.com/addonico/RatO/ontology/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://github.com/addonico/RatO/ontology/adventure
+<https://github.com/addonico/RatO/ontology/adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/animation
+<https://github.com/addonico/RatO/ontology/animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/animation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/en
+<https://github.com/addonico/RatO/ontology/en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/language> .
+# 
+# https://github.com/addonico/RatO/ontology/fr
+<https://github.com/addonico/RatO/ontology/fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/language> .
+# 
+# https://github.com/addonico/RatO/ontology/it
+<https://github.com/addonico/RatO/ontology/it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/it> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/language> .
+# 
+# https://github.com/addonico/RatO/ontology/nominated
+<https://github.com/addonico/RatO/ontology/nominated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/nominated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/awardType> .
+# 
+# https://github.com/addonico/RatO/ontology/oscar
+<https://github.com/addonico/RatO/ontology/oscar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/oscar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/awardingBody> .
+# 
+# https://github.com/addonico/RatO/ontology/romance
+<https://github.com/addonico/RatO/ontology/romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/scifi
+<https://github.com/addonico/RatO/ontology/scifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/scifi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/thriller
+<https://github.com/addonico/RatO/ontology/thriller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/thriller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/genre> .
+# 
+# https://github.com/addonico/RatO/ontology/won
+<https://github.com/addonico/RatO/ontology/won> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/won> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://github.com/addonico/RatO/ontology/awardType> .
+# 
+# https://github.com/addonico/RatO/ontology/#ElliotPage
+<https://github.com/addonico/RatO/ontology/#ElliotPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://github.com/addonico/RatO/ontology/#ElliotPage> <https://github.com/addonico/RatO/ontology/actedIn> <https://github.com/addonico/RatO/ontology/Inception> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid12 <http://www.w3.org/2002/07/owl#members> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/percentage> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/fiveStars> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/decimalScale> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid16 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/RottenTomatoes> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/IMDb> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid19 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/#ElliotPage> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://github.com/addonico/RatO/ontology/LeonardoDiCaprio> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid22 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid22 <http://www.w3.org/2000/01/rdf-schema#comment> "if two people have worked on the same movie, they know each other" .
+_:genid22 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid22 <http://www.w3.org/2003/11/swrl#body> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p> .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> .
+_:genid24 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://github.com/addonico/RatO/ontology/workedOn> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://github.com/addonico/RatO/ontology/workedOn> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://xmlns.com/foaf/0.1/Person> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://xmlns.com/foaf/0.1/Person> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/p> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <https://github.com/addonico/RatO/ontology/movie> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/2003/11/swrl#head> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/b> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/macop/ontologies/2026/3/untitled-ontology-4/a> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/knows> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

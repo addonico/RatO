@@ -1,0 +1,4226 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://github.com/addonico/RatO/ontology", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://github.com/addonico/RatO/ontology/", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2000/10/swap/pim/contact", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "https://github.com/addonico/RatO/ontology/"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "127",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "137",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "159",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "153",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "110",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "82",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "191",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "58",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://github.com/addonico/RatO/ontology/awardType",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "awardType"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/nominated",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "nominated"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/won",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "won"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The status of the award: a movie can win a specific awards, or just be nominated for it"
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Project",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Project",
+      "undefined" : "Project"
+    },
+    "comment" : {
+      "undefined" : "A project (a collective endeavour of some kind)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonalProfileDocument",
+      "undefined" : "PersonalProfileDocument"
+    },
+    "comment" : {
+      "undefined" : "A personal profile RDF document."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing",
+      "undefined" : "Spatial Thing"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/actor",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "actor"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/LeonardoDiCaprio",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "LeonardoDiCaprio"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An actor or actress who acted in the movie"
+    },
+    "id" : "69",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/fiveStars",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fiveStars"
+    },
+    "comment" : {
+      "undefined" : "A scale based on five starts, with one star being a low rating and five being the highest."
+    },
+    "id" : "74",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/movie",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "movie",
+      "undefined" : "Movie"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/Inception",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Inception"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A movie, identified by its title, date of release and people involved in its realization. It's assigned one or more ratings and can be awarded or nominated for one or more awards."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineAccount",
+      "undefined" : "Online Account"
+    },
+    "subClasses" : [ "76", "77", "78" ],
+    "comment" : {
+      "undefined" : "An online account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/ratingGiver",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ratingGiver"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/IMDb",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "IMDb"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/RottenTomatoes",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "RottenTomatoes"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The entity giving a rating, consisting either of a group of voters or of a single voter."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Agent",
+    "equivalent" : [ "67" ],
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/screenwriter",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "screenwriter"
+    },
+    "comment" : {
+      "undefined" : "The screenwriter of a movie. A movie can have more than one screenwriter."
+    },
+    "id" : "92",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Class",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Image",
+    "equivalent" : [ "110" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Image",
+      "undefined" : "Image"
+    },
+    "comment" : {
+      "undefined" : "An image."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "59",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/producer",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "producer"
+    },
+    "comment" : {
+      "undefined" : "The producer of a movie. A movie can have more than one producer."
+    },
+    "id" : "63",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "equivalent" : [ "86" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "124", "125", "4" ],
+    "comment" : {
+      "undefined" : "An agent (eg. person, group, software or physical artifact)."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "128",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "comment" : {
+      "undefined" : "An organization."
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/language",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "language"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/en",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "en"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/fr",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "fr"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/it",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "it"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The main language spoken in the movie."
+    },
+    "id" : "135"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/decimalScale",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "decimalScale"
+    },
+    "comment" : {
+      "undefined" : "A ten-based scale, with 1 being the lowest score and 10 the highest."
+    },
+    "id" : "138",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/rating",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "rating"
+    },
+    "comment" : {
+      "undefined" : "The rating given to a movie, consisting of a score (numerical, string, etc) expressed according to a scale (percentage, stars) and issued by a rating body."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
+    "equivalent" : [ "5" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "equivalent" : [ "152", "153" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "118", "69", "63", "92" ],
+    "comment" : {
+      "undefined" : "A person."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "4",
+    "superClasses" : [ "67", "27" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "127",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "46",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "137",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/genre",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "genre"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/Musical",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Musical"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/romance",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "romance"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/Documentary",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Documentary"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/thriller",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "thriller"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/Drama",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Drama"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/Comedy",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Comedy"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/adventure",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "adventure"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/scifi",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "scifi"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/animation",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "animation"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/Fantasy",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Fantasy"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/Crime",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "Crime"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The genre of a movie, i.e. adventure, or rom-com. A movie can have multiple genres."
+    },
+    "id" : "158"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "159",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/percentage",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "percentage"
+    },
+    "comment" : {
+      "undefined" : "A percentage-based scale, with lower percentages representing scarce appreciation."
+    },
+    "id" : "162",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineChatAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineChatAccount",
+      "undefined" : "Online Chat Account"
+    },
+    "comment" : {
+      "undefined" : "An online chat account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineGamingAccount",
+      "undefined" : "Online Gaming Account"
+    },
+    "comment" : {
+      "undefined" : "An online gaming account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/LabelProperty",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LabelProperty",
+      "undefined" : "Label Property"
+    },
+    "comment" : {
+      "undefined" : "A foaf:LabelProperty is any RDF property with texual values that serve as labels."
+    },
+    "attributes" : [ "external" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "170",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/director",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "director"
+    },
+    "comment" : {
+      "undefined" : "The director of a movie. A movie can have one or more directors."
+    },
+    "id" : "118",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/10/swap/pim/contact#Person",
+    "baseIri" : "http://www.w3.org/2000/10/swap/pim/contact",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://schema.org/ImageObject",
+    "equivalent" : [ "59" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImageObject"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/awardingBody",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "awardingBody"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/BAFTA",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "BAFTA"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/GoldenGlobeAward",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "GoldenGlobeAward"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/oscar",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "oscar"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An organization or event assigning awards to movies and people involved in their productions"
+    },
+    "id" : "102"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/award",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "award",
+      "undefined" : "Award"
+    },
+    "comment" : {
+      "undefined" : "An award given by an awarding body to a movie or a person involved in its production"
+    },
+    "id" : "24"
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "102" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "94",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "82",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "170", "171" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/scale",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "scale",
+      "undefined" : "Scale"
+    },
+    "subClasses" : [ "74", "138", "162" ],
+    "comment" : {
+      "undefined" : "The scale defining the score, i.e., percentages, 1 to 5 stars, 1-10 scale."
+    },
+    "id" : "75"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/voters",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "voters",
+      "undefined" : "Voters"
+    },
+    "comment" : {
+      "undefined" : "A group of people expressing a rating."
+    },
+    "id" : "149"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineEcommerceAccount",
+      "undefined" : "Online E-commerce Account"
+    },
+    "comment" : {
+      "undefined" : "An online e-commerce account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "189",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "191",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "58",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "29",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "equivalent" : [ "141" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "undefined" : "Document"
+    },
+    "subClasses" : [ "48", "59" ],
+    "comment" : {
+      "undefined" : "A document."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Group",
+      "undefined" : "Group"
+    },
+    "comment" : {
+      "undefined" : "A class of Agents."
+    },
+    "attributes" : [ "external" ],
+    "id" : "124",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/category",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "category"
+    },
+    "individuals" : [ {
+      "iri" : "https://github.com/addonico/RatO/ontology/BestDirector",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "BestDirector"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/BestActor",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "BestActor"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/BestPicture",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "BestPicture"
+      }
+    }, {
+      "iri" : "https://github.com/addonico/RatO/ontology/BestActress",
+      "baseIri" : "https://github.com/addonico/RatO/ontology",
+      "labels" : {
+        "IRI-based" : "BestActress"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The category of the award, i.e. \"Best Cinematography\" of the BSFC Award."
+    },
+    "id" : "52"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasScore",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasScore",
+      "undefined" : "has score"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Property expressing the value, numerical or literal, of a rating."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "workInfoHomepage",
+      "undefined" : "work info homepage"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A work info homepage of some person; a page about their work for some organization."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "7",
+    "subproperty" : [ "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasOriginalTitle",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasOriginalTitle",
+      "undefined" : "has original title"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The original title of a movie."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/wonAward",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "wonAward",
+      "undefined" : "won award"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property relating the movie with the awards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/expresses",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "expresses",
+      "undefined" : "expresses"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Property relating the rating authority to the rating it expressed. Inverse of \"expressedBy\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/based_near",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "based_near",
+      "undefined" : "based near"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "A location that something is based near, for some broadly human notion of near."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/page",
+    "inverse" : "30",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "page",
+      "undefined" : "page"
+    },
+    "domain" : "29",
+    "subproperty" : [ "31", "32", "33", "34" ],
+    "comment" : {
+      "undefined" : "A page or document about this thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/expressedBy",
+    "inverse" : "12",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "expressedBy",
+      "undefined" : "Expressed by"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The property connects the rating with its source, e.g, \"IMDb\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenName",
+      "undefined" : "Given name"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The given name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/dnaChecksum",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dnaChecksum",
+      "undefined" : "DNA checksum"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A checksum for the DNA of some thing. Joke."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/yahooChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "yahooChatID",
+      "undefined" : "Yahoo chat ID"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A Yahoo chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "44",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A name for some thing."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/icqChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "icqChatID",
+      "undefined" : "ICQ chat ID"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "An ICQ chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenname",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "50",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "givenname",
+      "undefined" : "Given name"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "The given name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasCategoryName",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasCategoryName",
+      "undefined" : "has category name"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "The name of an award's category, e.g. \"Top Box Office Movie\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPrimaryTopicOf",
+      "undefined" : "is primary topic of"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "29",
+    "subproperty" : [ "54", "34" ],
+    "comment" : {
+      "undefined" : "A document that this thing is the primary topic of."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasTitle",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "has title"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property declaring the main title a movie is known with."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/depiction",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "depiction",
+      "undefined" : "depiction"
+    },
+    "domain" : "58",
+    "subproperty" : [ "60" ],
+    "comment" : {
+      "undefined" : "A depiction of some thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/family_name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "family_name",
+      "undefined" : "family_name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The family name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/producedBy",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "producedBy",
+      "undefined" : "produced by"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property connecting the movie with its producer. Inverse of \"produced\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/title",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Title (Mr, Mrs, Ms, Dr. etc)"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/account",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "account",
+      "undefined" : "account"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "Indicates an account held by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "46",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/tipjar",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "tipjar",
+      "undefined" : "tipjar"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A tipjar document for this agent, describing means for payment and reward."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasLanguage",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasLanguage",
+      "undefined" : "has language"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property specifying the main language spoken in a movie."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/workedWith",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "workedWith",
+      "undefined" : "worked with"
+    },
+    "superproperty" : [ "80" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Property connecting two people who have worked on the same movie, regardless of their specific job."
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/aimChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "83",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "aimChatID",
+      "undefined" : "AIM chat ID"
+    },
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "An AIM chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/skypeID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "85",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "skypeID",
+      "undefined" : "Skype ID"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A Skype ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/writtenBy",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "writtenBy",
+      "undefined" : "written by"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "Property connecting a movie to its screenwriter. Inverse of \"wrote\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topic",
+      "undefined" : "topic"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "A topic of some page or document."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/img",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "img",
+      "undefined" : "image"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one's photo on a homepage)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/sha1",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "88",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sha1",
+      "undefined" : "sha1sum (hex)"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "A sha1sum hash, in hex."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/expressedOn",
+    "inverse" : "89",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "expressedOn",
+      "undefined" : "expressed on"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The property connects a rating with the movie it describes. Inverse of \"hasRating\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/firstName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "91",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "firstName",
+      "undefined" : "firstName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The first name of a person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/made",
+    "inverse" : "95",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "94",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "made",
+      "undefined" : "made"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "Something that was made by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasValue",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
+    },
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "The property specifies the type of genre of a movie."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/directs",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "directs",
+      "undefined" : "directed"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "The director who directed the movie. Inverse of \"directedBy\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/features",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "features",
+      "undefined" : "featured"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "82",
+    "comment" : {
+      "undefined" : "The property connects the movie with the actor/actress who acted in it. Inverse of \"actedIn\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/familyName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "101",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "familyName",
+      "undefined" : "familyName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The family name of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/givenBy",
+    "inverse" : "10",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "givenBy",
+      "undefined" : "given by"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Property connecting the award to the awarding body or event that assigns it. Inverse of \"gives\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/plan",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "104",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "plan",
+      "undefined" : "plan"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A .plan comment, in the tradition of finger and '.plan' files."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/basedOn",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "basedOn",
+      "undefined" : "based on"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The number of votes that determine the score, i.e., a five-star score based on twenty votes."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/myersBriggs",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "109",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "myersBriggs",
+      "undefined" : "myersBriggs"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A Myers Briggs (MBTI) personality classification."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/#hasName",
+    "baseIri" : "https://github.com/addonico/RatO/ontology/",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasName",
+      "undefined" : "has name"
+    },
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Property specifying the name of a deciding body (assigning an award or a rating)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/publications",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publications",
+      "undefined" : "publications"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A link to the publications of this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/interest",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interest",
+      "undefined" : "interest"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A page about a topic of interest to this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox_sha1sum",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "117",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mbox_sha1sum",
+      "undefined" : "sha1sum of a personal mailbox URI name"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/directedBy",
+    "inverse" : "98",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "directedBy",
+      "undefined" : "directed by"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property relating the movie with its director(s). Inverse of \"directed\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/nick",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "120",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nick",
+      "undefined" : "nickname"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames)."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasCategory",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasCategory",
+      "undefined" : "has category"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Property specifying the category of the award related to a movie, e.g. \"Top Box Office Movie\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasType",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "hasType",
+      "undefined" : "has type"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "The property specifying whether a movie was only nominated or also won an award."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/openid",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "openid",
+      "undefined" : "openid"
+    },
+    "superproperty" : [ "31" ],
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "An OpenID for an Agent."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/pastProject",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "127",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "pastProject",
+      "undefined" : "past project"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A project this person has previously worked on."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/produced",
+    "inverse" : "8",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "produced"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "The person producing a movie. Inverse of \"producedBy\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/theme",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "theme",
+      "undefined" : "theme"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A theme."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/knows",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "knows",
+      "undefined" : "knows"
+    },
+    "domain" : "4",
+    "subproperty" : [ "79" ],
+    "comment" : {
+      "undefined" : "A person known by this person (indicating some level of reciprocated interaction between the parties)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/focus",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "137",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "focus",
+      "undefined" : "focus"
+    },
+    "domain" : "123",
+    "comment" : {
+      "undefined" : "The underlying or 'focal' entity associated with some SKOS-described concept."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/phone",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "phone",
+      "undefined" : "phone"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/depicts",
+    "inverse" : "57",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "depicts",
+      "undefined" : "depicts"
+    },
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "A thing depicted in this representation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/geekcode",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "132",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geekcode",
+      "undefined" : "geekcode"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A textual geekcode for this person, see http://www.geekcode.com/geek.html"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
+    "inverse" : "31",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "primaryTopic",
+      "undefined" : "primary topic"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The primary topic of some page or document."
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/schoolHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "schoolHomepage",
+      "undefined" : "schoolHomepage"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A homepage of a school attended by the person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/gender",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "134",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gender",
+      "undefined" : "gender"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "The gender of this Agent (typically but not necessarily 'male' or 'female')."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/lastName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "131",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lastName",
+      "undefined" : "lastName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The last name of a person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/consistsOf",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "consistsOf",
+      "undefined" : "consists of"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "The property relates the rating body with the people constituting it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/status",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "155",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A string expressing what the user is happy for the general public (normally) to know about their current activity."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/expressedWith",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "expressedWith",
+      "undefined" : "expressed with"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The property connecting a score to the scale used to express it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasTitle",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "hasTitle",
+      "undefined" : "has title"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property declaring the main title a movie is known with."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/gives",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "gives",
+      "undefined" : "gives"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "The property specifies the award that a body, event or institution assigns to a movie. Inverse of \"givenBy\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accountServiceHomepage",
+      "undefined" : "account service homepage"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Indicates a homepage of the service provide for this online account."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/logo",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "logo",
+      "undefined" : "logo"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "A logo representing some thing."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/fundedBy",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "fundedBy",
+      "undefined" : "funded by"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "An organization funding a project or person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/actedIn",
+    "inverse" : "14",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "actedIn"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "69",
+    "comment" : {
+      "undefined" : "An actor/actress that acted in a movie. Inverse of the property \"featured\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "148",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "accountName",
+      "undefined" : "account name"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "Indicates the name (identifier) associated with this online account."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/workedOn",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "workedOn",
+      "undefined" : "worked on"
+    },
+    "domain" : "4",
+    "subproperty" : [ "129", "168", "165", "98" ],
+    "comment" : {
+      "undefined" : "Any activity perfomed by a person while working on a movie, i.e., producing, writing, taking care of photography or costumes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/jabberID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "130",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "jabberID",
+      "undefined" : "jabber ID"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "A jabber ID for something."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/age",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "146",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "age",
+      "undefined" : "age"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "The age in years of some agent."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/homepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "homepage",
+      "undefined" : "homepage"
+    },
+    "superproperty" : [ "31", "28" ],
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "A homepage for some thing."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "118",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "67",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "4",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "4",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "67",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/writes",
+    "inverse" : "13",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "writes",
+      "undefined" : "wrote"
+    },
+    "superproperty" : [ "99" ],
+    "domain" : "92",
+    "comment" : {
+      "undefined" : "The screenwriter writing a movie. Inverse of \"writtenBy\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/msnChatID",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "128",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "msnChatID",
+      "undefined" : "MSN chat ID"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "An MSN chat ID"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasRating",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "has rating"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The property refers the movie to its ratings. Inverse of \"expressedOn\"."
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic_interest",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "94",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "topic_interest",
+      "undefined" : "topic_interest"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A thing of interest to this person."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "180"
+  }, {
+    "range" : "67",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "68",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "27",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "68",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "68",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/currentProject",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "127",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "currentProject",
+      "undefined" : "current project"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A current project this person works on."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/holdsAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "holdsAccount",
+      "undefined" : "account"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "Indicates an account held by this agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/thumbnail",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "thumbnail",
+      "undefined" : "thumbnail"
+    },
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "A derived thumbnail image."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/weblog",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "weblog",
+      "undefined" : "weblog"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A weblog of some thing (whether person, group, company etc.)."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/birthday",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "150",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "unstable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "birthday",
+      "undefined" : "birthday"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "190"
+  }, {
+    "range" : "4",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "40",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasCategoryName",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "195",
+    "label" : {
+      "IRI-based" : "hasCategoryName",
+      "undefined" : "has category name"
+    },
+    "domain" : "52",
+    "comment" : {
+      "undefined" : "The name of an award's category, e.g. \"Top Box Office Movie\"."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "194"
+  }, {
+    "range" : "74",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "162",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "162",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasValue",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
+    },
+    "domain" : "158",
+    "comment" : {
+      "undefined" : "The property specifies the type of genre of a movie."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "199"
+  }, {
+    "range" : "40",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "125",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/member",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "member",
+      "undefined" : "member"
+    },
+    "domain" : "124",
+    "comment" : {
+      "undefined" : "Indicates a member of a Group"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "94",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mbox",
+      "undefined" : "personal mailbox"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/surname",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "173",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "archaic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "surname",
+      "undefined" : "Surname"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The surname of some person."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "204"
+  }, {
+    "range" : "5",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/maker",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maker",
+      "undefined" : "maker"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "An agent that  made this thing."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasGenre",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "hasGenre",
+      "undefined" : "has genre"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property relating the movie to its genres."
+    },
+    "attributes" : [ "object" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://github.com/addonico/RatO/ontology/hasReleaseDate",
+    "baseIri" : "https://github.com/addonico/RatO/ontology",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "hasReleaseDate",
+      "undefined" : "has release date"
+    },
+    "cardinality" : "1",
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Property specifying the date of release of a movie, expressed only by its year, e.g. \"2015\"."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "207"
+  }, {
+    "range" : "5",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "workplaceHomepage",
+      "undefined" : "workplace homepage"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "A workplace homepage of some person; the homepage of an organization they work for."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "210"
+  }, {
+    "range" : "4",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "75",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "75",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  } ]
+}
